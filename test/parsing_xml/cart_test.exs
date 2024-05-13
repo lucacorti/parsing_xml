@@ -30,7 +30,7 @@ defmodule ParsingXML.CartTest do
 
   test "parse error" do
     assert {:error, %Ecto.Changeset{valid?: false}} =
-             "test/parsing_xml/wrong_cart.xml"
+             "test/parsing_xml/cart_error.xml"
              |> File.read!()
              |> Parser.parse()
   end

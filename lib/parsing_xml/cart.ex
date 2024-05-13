@@ -1,5 +1,6 @@
 defmodule ParsingXML.Cart do
   @moduledoc false
+
   use Ecto.Schema
 
   alias ParsingXML.Cart.Item
