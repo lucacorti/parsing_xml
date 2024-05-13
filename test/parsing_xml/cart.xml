@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cart version="1">
+    <Title>Example</Title>
+    <Main category="groceries">
+        <Quantity>1K</Quantity>
+        <Description>Potatoes</Description>
+        <PurchasedAt>2024-01-01T00:00:00Z</PurchasedAt>
+    </Main>
+    <Item category="groceries">
+        <Quantity>1</Quantity>
+        <Description>Tomatoes</Description>
+        <PurchasedAt>2024-01-01T00:00:00Z</PurchasedAt>
+    </Item>
+    <Item category="credit">
+        <Quantity>1G</Quantity>
+        <Description>Traffic</Description>
+        <PurchasedAt>2024-01-01T00:00:00Z</PurchasedAt>
+    </Item>
+    <Item category="merchandise">
+        <Quantity>1</Quantity>
+        <Description>T-shirt</Description>
+        <PurchasedAt>2024-01-01T00:00:00Z</PurchasedAt>
+    </Item>
+    <Notes>Test 1</Notes>
+    <Notes>Test 2</Notes>
+    <Notes>Test 3</Notes>
+    <Other>
+        <Items>
+            <Quantity>1</Quantity>
+            <Description>Test</Description>
+            <PurchasedAt>2024-01-01T00:00:00Z</PurchasedAt>
+        </Items>
+    </Other>
+</Cart>
