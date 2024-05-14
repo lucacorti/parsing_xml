@@ -256,9 +256,11 @@ defmodule ParsingXML.Parser do
   defp generate_handle_xpath_data(nil = _schema), do: []
 
   defp generate_handle_xpath_data(schema) do
-    prefix = schema.__schema__(:prefix)
-    path_prefix = if prefix, do: Recase.to_pascal(to_string(prefix)), else: ""
-    generate_handle_xpath_data(schema, ["/" <> path_prefix], [], [])
+    prefix =
+      schema.__schema__(:prefix) ||
+        raise "You must specify @schema_prefix on your embedded schema with the root element name"
+
+    generate_handle_xpath_data(schema, ["/" <> to_string(prefix)], [], [])
   end
 
   defp generate_handle_xpath_data(schema, path, keys, functions) do
